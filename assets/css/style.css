@@ -12,8 +12,8 @@
     --highlight-accent-color: #2c3e50;
     --highlight-second-accent-color: #a3b18a;
     --button-color-bg: #f39c12;
-    --primary-font: "Noto Sans", sans-serif;
-    --secondary-font: "Bitter", sans-serif;
+    --primary-font: "Bitter", sans-serif;
+    --secondary-font: "Noto Sans", sans-serif;
 }
 
 /*Global Styles*/
@@ -21,6 +21,26 @@
 body {
     font-family: var(--primary-font);
     background-color: #e6f0f3;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.header-font {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*Navbar*/
@@ -46,7 +66,7 @@ body {
 
 .hero-section {
     position: relative;
-    min-height: 70vh;
+    min-height: 80vh;
     background-image: url('/assets/images/maincribgoch1600px.webp');
     background-size: cover;
     background-position: center;
@@ -71,15 +91,37 @@ body {
     background-color: var(--button-color-bg);
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .cta-btn:hover {
     background-color: #f39c12;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
   }
 
+  /*Region Cards*/
 
+  .card-img-top {
+    max-height: 160px;
+    object-fit: cover;
+  }
+
+  .region-card {
+    margin: 5px;
+    justify-content: center;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.fixed-title-height {
+  height: 3rem;
+}
 
 /*CSS Grid Visualisation*/
 /*
