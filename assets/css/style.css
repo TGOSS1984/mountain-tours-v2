@@ -21,8 +21,23 @@ body {
     font-family: var(--primary-font);
 }
 
-/*CSS Grid Visualisation*/
+/*Navbar*/
 
+.logo {
+    height: 120px;
+    width: auto;
+}
+
+#navbar {
+    background-color: var(--secondary-accent-color);
+}
+
+#navbar .nav-link {
+    color:var(--secondary-bg-color);
+}
+
+/*CSS Grid Visualisation*/
+/*
 .container, .row {
     border: 2px solid black;
 }
@@ -31,3 +46,4 @@ body {
     border: 2px solid white;
     background-color: lightgrey;
 }
+*/
