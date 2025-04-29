@@ -1,3 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*CSS Variables*/
+
+:root {
+    --primary-bg-color:#f0f8ff;
+    --secondary-bg-color: #e6f0f3;
+    --highlight-bg-color: #dbe9f4;
+    --primary-accent-color:#4b6584;
+    --secondary-accent-color: #6e7f80;
+    --highlight-accent-color: #2c3e50;
+    --highlight-second-accent-color: #a3b18a;
+    --button-color-bg: #f39c12;
+    --primary-font: "Noto Sans", sans-serif;
+    --secondary-font: "Bitter", sans-serif;
+}
+
+/*Global Styles*/
+
+body {
+    font-family: var(--primary-font);
+}
+
+/*CSS Grid Visualisation*/
+
+.container, .row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgrey;
+}
