@@ -3,6 +3,7 @@
 /*CSS Variables*/
 
 :root {
+    --main-bg-color: #5d6768;
     --primary-bg-color:#f0f8ff;
     --secondary-bg-color: #e6f0f3;
     --highlight-bg-color: #dbe9f4;
@@ -19,6 +20,7 @@
 
 body {
     font-family: var(--primary-font);
+    background-color: #e6f0f3;
 }
 
 /*Navbar*/
@@ -29,12 +31,55 @@ body {
 }
 
 #navbar {
-    background-color: var(--secondary-accent-color);
+    background-color: var(--main-bg-color);
 }
 
 #navbar .nav-link {
     color:var(--secondary-bg-color);
 }
+
+#navbar .nav-link:hover {
+    color: var(--button-color-bg);
+}
+
+/*Hero Section*/
+
+.hero-section {
+    position: relative;
+    min-height: 70vh;
+    background-image: url('/assets/images/maincribgoch1600px.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* overlay for contrast */
+    z-index: 1;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2; /* bring text above overlay */
+  }
+
+  .cta-btn {
+    background-color: var(--button-color-bg);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .cta-btn:hover {
+    background-color: #f39c12;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+
 
 /*CSS Grid Visualisation*/
 /*
