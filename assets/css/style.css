@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-wide {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -100,6 +100,123 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  /*Why Section*/
+
+  #reasons {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #reasons p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-accent-color);
+  }
+
+  #why-experience>div,
+    #why-active>div {
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+  #why-take-tour ul {
+    padding: 0 20px;
+  }
+
+  #why-take-tour hr {
+    border-top: 1px solid var(--primary-accent-color);
+    margin: 5px 0;
+  }
+
+  #why-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #circle-cover-bg {
+    background: url(../images/buachille-etive-mor.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vw;
+    width: 80vw;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .checkmark-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .checkmark-list li {
+    position: relative;
+    padding-left: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .checkmark-list li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+  #why-experience, #why-active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #why-experience>div,
+    #why-active>div {
+        width: 75%;
+    }
+
+    #why-active>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #why-take-tour {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #why-take-tour > div {
+        flex: 1;
+    }
+
+    #why-image {
+        order: 0
+    }
+
+    #why-active {
+        order: 1;
+    }
+
+    #why-experience > div {
+        align-self: flex-start;
+    }
+
+    #why-active > div {
+        align-self: flex-end;
+    }
+}
+
+   
 
   /*Region Cards*/
 
