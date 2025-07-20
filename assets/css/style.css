@@ -58,7 +58,7 @@ hr {
 }
 
 #navbar {
-    background-color: var(--main-bg-color);
+    background-color: var(--primary-accent-color);
 }
 
 #navbar .nav-link {
@@ -141,22 +141,6 @@ hr {
     margin: 5px 0;
   }
 
-  #why-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #circle-cover-bg {
-    background: url(../images/buachille-etive-mor.jpg) no-repeat center center;
-    background-size: cover;
-    height: 80vw;
-    width: 80vw;
-    border-radius: 50%; /*circle*/
-    max-width: 300px;
-    max-height: 300px;
-  }
-
   .checkmark-list {
     list-style: none;
     padding-left: 0;
@@ -171,7 +155,7 @@ hr {
   .checkmark-list li::before {
     content: "✔";
     color: white;
-    background-color: #f39c12; /* your orange */
+    background-color: #f39c12;
     border-radius: 50%; /* circle */
     width: 1.5em;
     height: 1.5em;
